@@ -84,6 +84,12 @@
         </svg>
         Bax Decipherment
       </button>
+      <button class="nav-tab" data-tab="debate-tab">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="nav-icon">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm14 10v-2a4 4 0 0 0-3-3.87m-4-12a4 4 0 0 1 0 7.75"/>
+        </svg>
+        Academic Debate
+      </button>
       <a href="decipherer.html" class="nav-tab" style="text-decoration: none; color: #a78bfa; border-color: rgba(167, 139, 250, 0.25);">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="nav-icon" style="color: #a78bfa;">
           <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
@@ -290,6 +296,155 @@
             </div>
             <div class="proofs-grid" id="bax-proofs-grid">
               <!-- Dynamically populated from JS -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Panel 6: Academic Debate & Methodologies -->
+      <section id="debate-tab" class="tab-panel">
+        <div class="debate-layout">
+          <!-- Intro Card -->
+          <div class="debate-intro-card glass-panel" style="padding: 24px; border-radius: 16px;">
+            <h2 style="font-family: var(--font-display); font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 8px;">Voynich Researchers & Methodological Debates</h2>
+            <p style="color: var(--text-secondary); font-size: 13px; line-height: 1.6; margin: 0;">The Voynich Manuscript (MS 408) has resisted translation for centuries, spawning diverse linguistic, cryptological, and botanical hypotheses. Below is an overview of the primary active theories, their empirical arguments, and the academic criticisms they face.</p>
+          </div>
+
+          <!-- Cards Grid -->
+          <div class="debate-grid">
+            <!-- Card 1: Stephen Bax -->
+            <div class="debate-card glass-panel">
+              <div class="debate-card-header">
+                <div class="researcher-info">
+                  <h3>Stephen Bax</h3>
+                  <span class="researcher-role">Professor of Applied Linguistics</span>
+                </div>
+                <span class="badge-accent">Phonetic Script Model</span>
+              </div>
+              <div class="debate-card-body">
+                <div class="debate-section">
+                  <h4>Approach & Contributions</h4>
+                  <p>Analyzed the manuscript as a natural, phonetic language rather than a code. Reconstructed phonetic sound values for individual letters by matching proper nouns adjacent to illustrations (e.g. <i>Coriander</i>, <i>Taurus</i>) using Semitic, Arabic, and Caucasus scripts.</p>
+                </div>
+                <div class="debate-split">
+                  <div class="split-merits">
+                    <h5>Merits & Arguments</h5>
+                    <ul>
+                      <li>Targets proper nouns which possess high semantic stability.</li>
+                      <li>Avoids arbitrary monoalphabetic substitutions.</li>
+                      <li>Phonetic readings match historical Middle Eastern script variations.</li>
+                    </ul>
+                  </div>
+                  <div class="split-criticisms">
+                    <h5>Criticisms & Objections</h5>
+                    <ul>
+                      <li>Extremely small sample size (only ~10 confirmed words).</li>
+                      <li>Phonetic mappings fail to scale to translate larger passages.</li>
+                      <li>Introduces arbitrary phonemes to bridge undeciphered gaps.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Edith Sherwood -->
+            <div class="debate-card glass-panel">
+              <div class="debate-card-header">
+                <div class="researcher-info">
+                  <h3>Edith Sherwood, Ph.D.</h3>
+                  <span class="researcher-role">Chemist & Independent Researcher</span>
+                </div>
+                <span class="badge-accent">Tuscan Anagram Theory</span>
+              </div>
+              <div class="debate-card-body">
+                <div class="debate-section">
+                  <h4>Approach & Contributions</h4>
+                  <p>Argues that the manuscript labels are single-word anagrams written in 15th-century Tuscan Italian, using Dante's 21-letter alphabet (omitting J, K, W, X, Y). Mapped 122 botanical anagram decodings matching historical Tuscan herbals (e.g., Materia Medica).</p>
+                </div>
+                <div class="debate-split">
+                  <div class="split-merits">
+                    <h5>Merits & Arguments</h5>
+                    <ul>
+                      <li>Systematic, repeatable process spanning the entire botanical section.</li>
+                      <li>Matches carbon-dating timeframe (Tuscany, c. 1400s).</li>
+                      <li>Includes diacritic analysis of loops and trailing curls.</li>
+                    </ul>
+                  </div>
+                  <div class="split-criticisms">
+                    <h5>Criticisms & Objections</h5>
+                    <ul>
+                      <li><b>The Anagram Trap:</b> Given short strings and archaic synonyms, many Italian words can be formed, risking selection bias.</li>
+                      <li>Unorthodox letter associations.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Arthur Tucker & Hugh O'Neill -->
+            <div class="debate-card glass-panel">
+              <div class="debate-card-header">
+                <div class="researcher-info">
+                  <h3>Tucker & O'Neill</h3>
+                  <span class="researcher-role">Botanists & Taxonomists</span>
+                </div>
+                <span class="badge-accent">New World Botanical Model</span>
+              </div>
+              <div class="debate-card-body">
+                <div class="debate-section">
+                  <h4>Approach & Contributions</h4>
+                  <p>Visual botanical matching of illustration morphology to physical plant species. O'Neill identified European wild pansies and sunflowers (f93r); Tucker argued for Mesoamerican origins, identifying Aztec plants (e.g., <i>Xiuhhamolli</i>).</p>
+                </div>
+                <div class="debate-split">
+                  <div class="split-merits">
+                    <h5>Merits & Arguments</h5>
+                    <ul>
+                      <li>Provides objective physical visual markers (seed-patterns, leaf shape).</li>
+                      <li>Attempts to resolve the identity of drawings using standard botanical keys.</li>
+                    </ul>
+                  </div>
+                  <div class="split-criticisms">
+                    <h5>Criticisms & Objections</h5>
+                    <ul>
+                      <li>Post-Columbus dating (post-1492) directly contradicts carbon dating of the vellum (1404–1438).</li>
+                      <li>Stylized drawings are often composite medieval fantasy flora.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Historical Cryptologists -->
+            <div class="debate-card glass-panel">
+              <div class="debate-card-header">
+                <div class="researcher-info">
+                  <h3>Newbold & Strong</h3>
+                  <span class="researcher-role">Historical Cryptanalysts (Early 20th C.)</span>
+                </div>
+                <span class="badge-accent">Micrography & Complex Ciphers</span>
+              </div>
+              <div class="debate-card-body">
+                <div class="debate-section">
+                  <h4>Approach & Contributions</h4>
+                  <p>William Newbold proposed that the letters are composed of tiny shorthand strokes representing Greek shorthand. Leonell Strong proposed a double-system substitution cipher using a complex modular key grid.</p>
+                </div>
+                <div class="debate-split">
+                  <div class="split-merits">
+                    <h5>Merits & Arguments</h5>
+                    <ul>
+                      <li>Extremely detailed and complex mathematical decryption structures.</li>
+                      <li>Formulated early comprehensive transcription maps of the script.</li>
+                    </ul>
+                  </div>
+                  <div class="split-criticisms">
+                    <h5>Criticisms & Objections</h5>
+                    <ul>
+                      <li>Microscopic analysis of ink showed that the "shorthand strokes" were simply cracks in the aging ink and vellum.</li>
+                      <li>Decryption steps were too complex, allowing subjective derivation of any text.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -1330,3 +1330,153 @@ body {
     max-height: none;
   }
 }
+
+/* Debates panel layouts */
+.debate-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.debate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 24px;
+}
+
+.debate-card {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.debate-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  border-bottom: 1px solid var(--panel-border);
+  padding-bottom: 14px;
+}
+
+.researcher-info h3 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.researcher-role {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.debate-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.debate-section h4 {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  color: #a78bfa;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.debate-section p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.debate-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 16px;
+}
+
+.split-merits h5 {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+  color: #34d399;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.split-criticisms h5 {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+  color: #f87171;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.split-merits ul, .split-criticisms ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.split-merits li, .split-criticisms li {
+  font-size: 12px;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 16px;
+}
+
+.split-merits li::before {
+  content: "•";
+  color: #34d399;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.split-criticisms li::before {
+  content: "•";
+  color: #f87171;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.split-merits li {
+  color: #e2e8f0;
+}
+
+.split-criticisms li {
+  color: #e2e8f0;
+}
+
+@media (max-width: 768px) {
+  .debate-grid {
+    grid-template-columns: 1fr;
+  }
+  .debate-split {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
