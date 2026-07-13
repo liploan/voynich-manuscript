@@ -87,7 +87,21 @@ Since the application is serverless and executes client-side in the browser, you
 
 ---
 
+## 🔍 Voynich Researchers & Methodological Debates
+
+This dashboard integrates data and theories from major research streams. The table below outlines their approaches, contributions, arguments, and typical academic criticisms:
+
+| Researcher | Approach / Thesis | Key Contributions | Arguments & Merits | Primary Criticisms & Counterarguments |
+| :--- | :--- | :--- | :--- | :--- |
+| **Stephen Bax** <br>*(Linguist)* | **Semitic / Caucasian Phonetic Script:** Analyzed the manuscript as a natural language written in a phonetic script (not a code), using Arabic, Hebrew, and Caucasian scripts to map sound values. | Proposed phonetic sound-values for ~10 key words adjacent to illustrations (e.g. *kaur* for Coriander, *taurus* for Taurus). | • Targets proper nouns with high semantic stability.<br>• Avoids arbitrary monoalphabetic substitutions.<br>• Grounded in historical Semitic script structures. | • Extremely small sample size.<br>• Mappings do not scale to translate coherent paragraphs without introducing arbitrary filler phonemes or grammatical jumps. |
+| **Edith Sherwood, Ph.D.** <br>*(Chemist / Independent)* | **Tuscan-Italian Anagrams:** Argues the labels are single-word anagrams written in 15th-century Tuscan Italian, using Dante's 21-letter alphabet (omitting J, K, W, X, Y). | Scraped and mapped 122 botanical anagram decodings matching historical Tuscan herbals (e.g. Materia Medica). | • Systematic, repeatable process spanning the entire botanical section.<br>• Matches linguistic timeframes (Tuscany, c. 1400s). | • **The Anagram Flexibility Trap:** Given short character strings and archaic spelling variations, a wide range of anagrams can be formulated, risking subjective selection bias. |
+| **Arthur Tucker & Hugh O'Neill** <br>*(Botanists)* | **Mesoamerican & Sunflower Identification:** Visual botanical matching of illustration morphology to physical plant species, arguing for New World origins. | Identified New World species like *Helianthus annuus* (sunflower, f93r) and *Capsicum* (red pepper, f101v). | • Provides objective physical visual markers (seed-patterns, leaf shape) matching specific real-world plants. | • Post-Columbus dating (post-1492) contradicts the solid radiocarbon dating of the manuscript's vellum (1404–1438).<br>• Stylized drawings could be composite medieval fantasy illustrations. |
+| **Leonell Strong / William Newbold** <br>*(Historical Cryptologists)* | **Micrography / Double-Cipher Systems:** Proposed the letters are composed of tiny shorthand strokes or micro-characters representing a complex polyalphabetic cipher. | Early 20th-century transcription databases and cipher grids. | • Intricate decryption frameworks attempting to explain anomalous stroke-level details. | • Criticized as structurally subjective; the "microscopic strokes" were later shown to be cracks in the aging ink and vellum, not deliberate writing. |
+
+---
+
 ## 📚 Academic Context & References
 * **Scans:** Courtesy of the Yale University Beinecke Rare Book & Manuscript Library (MS 408).
 * **Edith Sherwood, Ph.D.:** Anagram analysis of botanical labels from [edithsherwood.com](https://www.edithsherwood.com/voynich-botanical-plant-anagrams/index.php).
 * **Stephen Bax:** Phonetic decipherment methodologies from *A Proposed Partial Decipherment of the Voynich Manuscript*.
+
