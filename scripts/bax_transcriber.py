@@ -1,0 +1,298 @@
+#!/usr/bin/env python3
+import re
+import math
+import json
+from collections import Counter, defaultdict
+
+# File paths
+V101_PATH = "/Users/liploan/Documents/Voynich Manuscript/voynich_v101.txt"
+ZL_PATH = "/Users/liploan/Documents/Voynich Manuscript/voynich_zl.txt"
+JSON_OUT_PATH = "/Users/liploan/Documents/Voynich Manuscript/voynich_stats.json"
+
+# Folio section ranges
+def get_section(folio_str):
+    m = re.match(r'^(\d+)', folio_str)
+    if not m:
+        return "Unknown"
+    num = int(m.group(1))
+    if 1 <= num <= 66:
+        return "Herbal"
+    elif 67 <= num <= 73:
+        return "Astronomical"
+    elif 75 <= num <= 84:
+        return "Biological"
+    elif 85 <= num <= 86:
+        return "Cosmological"
+    elif 87 <= num <= 102:
+        return "Pharmaceutical"
+    elif 103 <= num <= 116:
+        return "Recipes"
+    else:
+        return "Other"
+
+def compute_entropy(counts, total):
+    entropy = 0.0
+    for val in counts.values():
+        p = val / total
+        entropy -= p * math.log2(p)
+    return entropy
+
+def compute_ic(char_counts, total_chars):
+    if total_chars <= 1:
+        return 0.0
+    numerator = sum(count * (count - 1) for count in char_counts.values())
+    denominator = total_chars * (total_chars - 1)
+    return numerator / denominator
+
+def transcribe_word(word):
+    w = word.lower()
+    
+    # 1. Replace clusters
+    w = w.replace("iin", "UR")
+    w = w.replace("in", "IR")
+    w = w.replace("ee", "O:")
+    
+    # 2. Character mapping (EVA to Bax phonetic sounding)
+    mapping = {
+        "k": "K",
+        "y": "N",
+        "d": "T",
+        "t": "T",
+        "r": "R",
+        "m": "R",
+        "n": "R",
+        "sh": "X",
+        "s": "S",
+        "o": "A",
+        "a": "A",
+        "e": "O",
+    }
+    
+    w = w.replace("sh", "X")
+    
+    result = []
+    i = 0
+    while i < len(w):
+        if w[i].isupper() or w[i] == ":" or w[i] == "(":
+            result.append(w[i])
+            i += 1
+        elif w[i] in mapping:
+            result.append(mapping[w[i]])
+            i += 1
+        else:
+            # Keep unmapped characters as raw lowercase
+            result.append(w[i])
+            i += 1
+            
+    return "".join(result).lower()
+
+def transcribe_line(eva_line):
+    # Clean uncertain spacers/connectors and split into tokens
+    cleaned = eva_line.replace(",", " ").replace(".", " ")
+    words = cleaned.split()
+    transcribed_words = [transcribe_word(w) for w in words]
+    return ".".join(transcribed_words)
+
+def clean_zl_text(raw_text):
+    # Clean comments like <!doodle: @254;>
+    cleaned = re.sub(r"<![^>]+>", "", raw_text)
+    # Clean bracketed readings [cth:oto] -> take the second option
+    cleaned = re.sub(r"\[[^\]]+\]", lambda m: m.group(0).split(":")[-1].replace("]", "") if ":" in m.group(0) else m.group(0), cleaned)
+    # Clean symbols and formatting
+    cleaned = cleaned.replace("<->", " ").replace("<$>", "").replace("<%>", "").strip()
+    # Normalize multiple spaces and dots
+    cleaned = re.sub(r"\s+", " ", cleaned)
+    return cleaned
+
+def process_and_merge():
+    # 1. Parse Claston v101 lines
+    v101_pattern = re.compile(r"^<(\d+[rv])(?:([^.]+))?\.(.*?)>\s*(.*)$")
+    v101_lines = defaultdict(dict)
+    with open(V101_PATH, "r", encoding="utf-8") as f:
+        for line in f:
+            m = v101_pattern.match(line.strip())
+            if m:
+                folio, subpane, line_name, text = m.groups()
+                subpane = subpane or ""
+                line_id = f"{subpane}.{line_name}" if subpane else line_name
+                # Clean connectors
+                cleaned_text = text.replace("=", "").replace("-", "")
+                v101_lines[folio][line_id] = cleaned_text
+
+    # 2. Parse ZL EVA lines
+    zl_pattern = re.compile(r"^<f(\d+[rv])(?:([^.,>]+))?\.([^.,>]+)(?:,([^>]+))?>\s*(?:<[^>]+>)?\s*(.*)$")
+    zl_lines = defaultdict(dict)
+    with open(ZL_PATH, "r", encoding="utf-8") as f:
+        for line in f:
+            m = zl_pattern.match(line.strip())
+            if m:
+                folio, subpane, line_name, extra, text = m.groups()
+                subpane = subpane or ""
+                line_id = f"{subpane}.{line_name}" if subpane else line_name
+                cleaned_text = clean_zl_text(text)
+                zl_lines[folio][line_id] = cleaned_text
+
+    # 3. Align and Transcribe
+    global_words = []
+    global_chars = []
+    
+    section_words = defaultdict(list)
+    section_chars = defaultdict(list)
+    section_line_counts = defaultdict(int)
+    
+    folios_data = defaultdict(list)
+    
+    # Get all unique folios from both transcriptions
+    all_folios = set(v101_lines.keys()).union(set(zl_lines.keys()))
+    
+    def folio_sort_key(f):
+        m = re.match(r"^(\d+)([rv])", f)
+        if m:
+            return (int(m.group(1)), m.group(2))
+        return (999, f)
+        
+    sorted_folios = sorted(all_folios, key=folio_sort_key)
+    
+    def natural_sort_key(s):
+        return [int(text) if text.isdigit() else text.lower() for text in re.split(r'(\d+)', s)]
+        
+    for folio in sorted_folios:
+        f_v101 = v101_lines.get(folio, {})
+        f_zl = zl_lines.get(folio, {})
+        
+        # Get the union of line IDs in this folio
+        all_line_ids = sorted(set(f_v101.keys()).union(set(f_zl.keys())), key=natural_sort_key)
+        
+        for line_id in all_line_ids:
+            v101_text = f_v101.get(line_id, "")
+            eva_text = f_zl.get(line_id, "")
+            
+            # Generate Bax phonetic transliteration
+            bax_text = transcribe_line(eva_text) if eva_text else ""
+            
+            # Save line structure
+            folios_data[folio].append({
+                "line_num": line_id,
+                "v101": v101_text,
+                "eva": eva_text,
+                "bax": bax_text
+            })
+            
+            # Track statistics on EVA text (since EVA is standard and maps to Bax)
+            if eva_text:
+                sect = get_section(folio)
+                section_line_counts[sect] += 1
+                
+                # Tokenize EVA words
+                eva_words = [w for w in eva_text.replace(".", " ").split() if w]
+                for w in eva_words:
+                    global_words.append(w)
+                    section_words[sect].append(w)
+                    for char in w:
+                        global_chars.append(char)
+                        section_chars[sect].append(char)
+
+    # 4. Calculate Stats on EVA
+    total_lines = sum(len(lines) for lines in folios_data.values())
+    total_words = len(global_words)
+    total_chars = len(global_chars)
+    
+    word_counts = Counter(global_words)
+    char_counts = Counter(global_chars)
+    
+    vocab_size = len(word_counts)
+    hapax_count = sum(1 for count in word_counts.values() if count == 1)
+    
+    # Word lengths
+    word_lengths = [len(w) for w in global_words]
+    avg_word_length = sum(word_lengths) / max(total_words, 1)
+    word_length_dist = Counter(word_lengths)
+    
+    # Calculate word length standard deviation
+    variance = sum(((length - avg_word_length) ** 2) * count for length, count in word_length_dist.items())
+    variance /= max(total_words, 1)
+    std_word_length = math.sqrt(variance)
+    
+    # Entropy
+    unigram_entropy = compute_entropy(char_counts, total_chars)
+    bigrams = [global_chars[i] + global_chars[i+1] for i in range(len(global_chars)-1)]
+    bigram_counts = Counter(bigrams)
+    joint_bigram_entropy = compute_entropy(bigram_counts, len(bigrams))
+    conditional_bigram_entropy = joint_bigram_entropy - unigram_entropy
+    
+    trigrams = [global_chars[i] + global_chars[i+1] + global_chars[i+2] for i in range(len(global_chars)-2)]
+    trigram_counts = Counter(trigrams)
+    joint_trigram_entropy = compute_entropy(trigram_counts, len(trigrams))
+    conditional_trigram_entropy = joint_trigram_entropy - joint_bigram_entropy
+    
+    ic_value = compute_ic(char_counts, total_chars)
+    
+    top_words = [{"word": w, "count": c} for w, c in word_counts.most_common(50)]
+    top_chars = [{"char": c, "count": cnt, "percentage": (cnt / total_chars) * 100} for c, cnt in char_counts.most_common(30)]
+
+    # Section-based stats
+    sections_stats = {}
+    for sect in ["Herbal", "Astronomical", "Biological", "Cosmological", "Pharmaceutical", "Recipes"]:
+        s_words = section_words[sect]
+        s_chars = section_chars[sect]
+        s_lines = section_line_counts[sect]
+        
+        s_word_counts = Counter(s_words)
+        s_char_counts = Counter(s_chars)
+        
+        s_total_words = len(s_words)
+        s_total_chars = len(s_chars)
+        
+        s_word_lengths = [len(w) for w in s_words]
+        s_avg_word_len = sum(s_word_lengths) / max(s_total_words, 1)
+        
+        s_unigram_entropy = compute_entropy(s_char_counts, s_total_chars) if s_total_chars > 0 else 0.0
+        
+        s_bigrams = [s_chars[i] + s_chars[i+1] for i in range(len(s_chars)-1)]
+        s_bigram_counts = Counter(s_bigrams)
+        s_joint_entropy = compute_entropy(s_bigram_counts, len(s_bigrams)) if len(s_bigrams) > 0 else 0.0
+        s_conditional_entropy = s_joint_entropy - s_unigram_entropy
+        
+        s_ic = compute_ic(s_char_counts, s_total_chars)
+        
+        sections_stats[sect] = {
+            "lines": s_lines,
+            "words": s_total_words,
+            "chars": s_total_chars,
+            "vocab_size": len(s_word_counts),
+            "hapax_count": sum(1 for c in s_word_counts.values() if c == 1),
+            "avg_word_length": round(s_avg_word_len, 2),
+            "unigram_entropy": round(s_unigram_entropy, 4),
+            "conditional_entropy": round(s_conditional_entropy, 4),
+            "index_of_coincidence": round(s_ic, 5),
+            "top_words": [{"word": w, "count": c} for w, c in s_word_counts.most_common(10)]
+        }
+
+    # Combined stats structure
+    stats_data = {
+        "global": {
+            "total_lines": total_lines,
+            "total_words": total_words,
+            "total_chars": total_chars,
+            "vocab_size": vocab_size,
+            "hapax_count": hapax_count,
+            "avg_word_length": round(avg_word_length, 2),
+            "std_word_length": round(std_word_length, 2),
+            "unigram_entropy": round(unigram_entropy, 4),
+            "conditional_entropy": round(conditional_bigram_entropy, 4),
+            "trigram_conditional_entropy": round(conditional_trigram_entropy, 4),
+            "index_of_coincidence": round(ic_value, 5),
+            "top_words": top_words,
+            "top_chars": top_chars,
+            "word_length_dist": {str(k): v for k, v in sorted(word_length_dist.items())}
+        },
+        "sections": sections_stats,
+        "folios": {folio: lines for folio, lines in sorted(folios_data.items(), key=lambda x: folio_sort_key(x[0]))}
+    }
+    
+    with open(JSON_OUT_PATH, "w", encoding="utf-8") as f_out:
+        json.dump(stats_data, f_out, indent=2)
+    print(f"Stats with aligned phonetic transcriptions successfully written to {JSON_OUT_PATH}")
+
+if __name__ == "__main__":
+    process_and_merge()

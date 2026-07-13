@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voynich Manuscript Cryptographic & Linguistic Dashboard</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- App Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="glow-bg"></div>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+          <path d="M12 6v12M6 12h12M9 9l6 6M9 15l6-6"/>
+        </svg>
+        <div class="logo-text">
+          <h1>VOYNICH MS</h1>
+          <span class="sub-title">Cryptographic & Linguistic Analytics</span>
+        </div>
+      </div>
+      <div class="global-stats-header">
+        <div class="stat-mini">
+          <span class="stat-label">Total Folios</span>
+          <span class="stat-value" id="hdr-total-folios">-</span>
+        </div>
+        <div class="stat-mini">
+          <span class="stat-label">Total Words</span>
+          <span class="stat-value" id="hdr-total-words">-</span>
+        </div>
+        <div class="stat-mini">
+          <span class="stat-label">Unigram Entropy</span>
+          <span class="stat-value" id="hdr-unigram-entropy">-</span>
+        </div>
+        <div class="stat-mini">
+          <span class="stat-label">Index of Coincidence</span>
+          <span class="stat-value" id="hdr-ic">-</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="app-nav">
+      <button class="nav-tab active" data-tab="explorer-tab">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="nav-icon">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+        </svg>
+        Folio Explorer
+      </button>
+      <button class="nav-tab" data-tab="search-tab">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="nav-icon">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        Search & Concordance
+      </button>
+      <button class="nav-tab" data-tab="charts-tab">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="nav-icon">
+          <line x1="18" y1="20" x2="18" y2="10"/>
+          <line x1="12" y1="20" x2="12" y2="4"/>
+          <line x1="6" y1="20" x2="6" y2="14"/>
+        </svg>
+        Visual Statistics
+      </button>
+      <button class="nav-tab" data-tab="compare-tab">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="nav-icon">
+          <path d="M16 3h5v5M4 20L20 4M21 16v5h-5M15 15l6 6M4 4l5 5"/>
+        </svg>
+        Section Comparison
+      </button>
+      <button class="nav-tab" data-tab="bax-tab">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="nav-icon">
+          <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/>
+        </svg>
+        Bax Decipherment
+      </button>
+      <a href="decipherer.html" class="nav-tab" style="text-decoration: none; color: #a78bfa; border-color: rgba(167, 139, 250, 0.25);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="nav-icon" style="color: #a78bfa;">
+          <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+          <path d="M14.828 14.828a4 4 0 0 1-5.656 0M9 10h.01M15 10h.01"/>
+        </svg>
+        Decipherment Workspace
+      </a>
+    </nav>
+
+    <!-- Main Content Panels -->
+    <main class="app-main">
+      
+      <!-- Panel 1: Folio Explorer -->
+      <section id="explorer-tab" class="tab-panel active">
+        <div class="explorer-layout">
+          <!-- Sidebar: Folio List -->
+          <div class="explorer-sidebar glass-panel">
+            <div class="sidebar-header">
+              <h3>Select Folio</h3>
+              <input type="text" id="folio-filter" placeholder="Filter folios (e.g. 75)..." class="custom-input">
+            </div>
+            <div class="folio-list" id="folio-selector-container">
+              <!-- Dynamically populated list of folios -->
+            </div>
+          </div>
+
+          <!-- Main Viewer: Folio Text -->
+          <div class="explorer-viewer glass-panel">
+            <div class="viewer-header">
+              <div class="viewer-title-area">
+                <h2 id="current-folio-title">Folio 1r</h2>
+                <span class="section-tag" id="current-folio-section">Herbal</span>
+              </div>
+              <div class="viewer-controls">
+                <label class="toggle-container">
+                  <input type="checkbox" id="interlinear-toggle">
+                  <span class="toggle-slider"></span>
+                  <span class="toggle-label">Phonetic Interlinear</span>
+                </label>
+                <span id="current-folio-lines-count" class="viewer-meta">24 lines</span>
+              </div>
+            </div>
+            
+            <div class="text-container" id="folio-text-display">
+              <!-- Line-by-line transcription -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Panel 2: Search & Concordance -->
+      <section id="search-tab" class="tab-panel">
+        <div class="search-layout glass-panel">
+          <div class="search-controls">
+            <h2>Word Search & Concordance</h2>
+            <p class="panel-desc">Search for specific words or characters in the manuscript across different transcription tiers.</p>
+            <div class="search-input-group">
+              <input type="text" id="search-input" placeholder="Search the manuscript..." class="custom-input search-input">
+              <button id="search-button" class="btn-primary">Search</button>
+            </div>
+            <div class="search-options font-controls">
+              <div class="search-tier-selector">
+                <span class="selector-label">Search Tier:</span>
+                <label class="radio-container">
+                  <input type="radio" name="search-tier" value="v101" checked>
+                  <span class="radio-mark"></span>
+                  Claston v101
+                </label>
+                <label class="radio-container">
+                  <input type="radio" name="search-tier" value="eva">
+                  <span class="radio-mark"></span>
+                  Standard EVA
+                </label>
+                <label class="radio-container">
+                  <input type="radio" name="search-tier" value="bax">
+                  <span class="radio-mark"></span>
+                  Bax Phonetic
+                </label>
+              </div>
+              <label class="checkbox-container">
+                <input type="checkbox" id="search-exact">
+                <span class="checkmark"></span>
+                Match whole word only
+              </label>
+            </div>
+          </div>
+
+          <div class="search-results-area">
+            <div class="results-meta">
+              <span id="search-status">Enter a query to search the manuscript text.</span>
+            </div>
+            <div class="search-results-table-container">
+              <table class="results-table" id="search-results-table">
+                <thead>
+                  <tr>
+                    <th>Folio</th>
+                    <th>Section</th>
+                    <th>Line</th>
+                    <th>Text containing query</th>
+                  </tr>
+                </thead>
+                <tbody id="search-results-body">
+                  <!-- Matching lines -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Panel 3: Visual Statistics -->
+      <section id="charts-tab" class="tab-panel">
+        <div class="charts-layout">
+          <!-- Character Frequency Chart -->
+          <div class="chart-card glass-panel full-width">
+            <div class="chart-header">
+              <h3>Character Frequencies (Top 30 Glyph Codes)</h3>
+              <p>Percentage frequency of glyph representations in the transcription.</p>
+            </div>
+            <div class="chart-wrapper">
+              <canvas id="char-freq-chart"></canvas>
+            </div>
+          </div>
+
+          <!-- Word Length Distribution -->
+          <div class="chart-card glass-panel">
+            <div class="chart-header">
+              <h3>Word Length Distribution</h3>
+              <p>Frequency distribution of token character lengths.</p>
+            </div>
+            <div class="chart-wrapper">
+              <canvas id="word-len-chart"></canvas>
+            </div>
+          </div>
+
+          <!-- Zipf's Law check -->
+          <div class="chart-card glass-panel">
+            <div class="chart-header">
+              <h3>Word Rank-Frequency (Zipf's Law)</h3>
+              <p>Linguistic check: does Voynichese match natural text distributions?</p>
+            </div>
+            <div class="chart-wrapper">
+              <canvas id="zipf-chart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Panel 4: Section Comparison -->
+      <section id="compare-tab" class="tab-panel">
+        <div class="compare-layout">
+          <!-- Section Cards Grid -->
+          <div class="section-cards-grid" id="section-cards-container">
+            <!-- Populated dynamically -->
+          </div>
+
+          <!-- Comparative Chart -->
+          <div class="chart-card glass-panel full-width">
+            <div class="chart-header">
+              <h3>Sectional Entropy Comparison (Bits)</h3>
+              <p>Unigram entropy (raw symbol variety) vs. Conditional Bigram entropy (sequential predictability).</p>
+            </div>
+            <div class="chart-wrapper large-chart">
+              <canvas id="section-compare-chart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Panel 5: Bax Decipherment -->
+      <section id="bax-tab" class="tab-panel">
+        <div class="bax-layout">
+          <!-- Top Row: Intro & Alphabet Side-by-Side -->
+          <div class="bax-top-row">
+            <!-- Intro Card -->
+            <div class="bax-intro-card glass-panel">
+              <div class="intro-header">
+                <h2>Stephen Bax's Phonetic Decipherment</h2>
+                <span class="badge-accent">2014 Hypothesis</span>
+              </div>
+              <div class="intro-body">
+                <p>The late linguist Stephen Bax proposed that the Voynich Manuscript is not a hoax or cipher, but rather a text written in a real, possibly lost or hybrid language, using an adapted phonetic script. By identifying proper names next to drawings (such as plants and constellations), Bax established a partial alphabet of about a dozen signs.</p>
+                <p>This panel showcases his phonetic mappings, the 10 plant/constellation proofs that served as his key, and the resulting phonetic readings across the manuscript.</p>
+              </div>
+            </div>
+
+            <!-- Alphabet Card -->
+            <div class="bax-alphabet-card glass-panel">
+              <div class="card-header">
+                <h3>Phonetic Alphabet Key</h3>
+                <p>Mappings from standard EVA transcription glyphs to Bax's proposed sounds.</p>
+              </div>
+              <div class="alphabet-grid" id="bax-alphabet-grid">
+                <!-- Dynamically populated from JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Row: 10 Proofs Grid -->
+          <div class="bax-proofs-card glass-panel">
+            <div class="card-header">
+              <h3>Decipherment Proofs & Proper Names</h3>
+              <p>The 10 plant and astronomical drawings Bax used to anchor his phonetic mapping. Click "View in Explorer" to jump directly to the target folio.</p>
+            </div>
+            <div class="proofs-grid" id="bax-proofs-grid">
+              <!-- Dynamically populated from JS -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <p>Voynich Manuscript Cryptographic & Linguistic Dashboard &copy; 2026. Built for Beinecke MS 408 Analysis.</p>
+    </footer>
+  </div>
+
+  <!-- App Script -->
+  <script src="app.js"></script>
+</body>
+</html>

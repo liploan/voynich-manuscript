@@ -1,0 +1,501 @@
+word_id,eva_word,char_length,frequency,intermittency_score,morphology_prefix,morphological_root,morphological_suffix,primary_section,language_dialect,scribe_association,historical_notes
+VMS_0001,qoiin9,6,545,1.052,qo,iin,9,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0002,al,2,521,0.985,,al,,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0003,em,2,500,1.017,,e,m,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0004,qoamy,5,480,0.982,qo,am,y,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0005,piinn,5,461,1.096,p,iin,n,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0006,iins,4,444,1.004,,iin,s,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0007,qoaron,6,428,1.407,qo,ar,on,Herbal,Voynich A,Scribe 1,Synthetic keyword. High-intermittency profile.
+VMS_0008,cthy,4,420,1.45,c,th,y,Herbal,Voynich A,Scribe 5,Amancio Keyword #1. Highly bursty in plant/root pages.
+VMS_0009,shar9,5,413,0.981,sh,ar,9,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0010,far,3,400,1.03,f,a,r,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0011,alm,3,387,0.999,,al,m,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0012,qokeedy,7,380,1.38,qo,kee,dy,Herbal,Voynich A,Scribe 1,Amancio Keyword #2. Key topic word in botanical sections.
+VMS_0013,okr,3,375,0.982,o,k,r,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0014,cer,3,363,1.046,c,e,r,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0015,ots,3,352,0.983,o,t,s,Balneological,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0016,yok9,4,342,1.069,y,ok,9,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0017,chaln,5,333,1.096,ch,al,n,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0018,yaron,5,324,1.001,y,ar,on,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0019,shokon,6,315,1.379,sh,ok,on,Pharmaceutical,Voynich A,Scribe 1,Synthetic keyword. High-intermittency profile.
+VMS_0020,shedy,5,310,1.35,sh,e,dy,Herbal,Voynich A,Scribe 1,Amancio Keyword #3. Clusters heavily in pharmaceutical pages.
+VMS_0021,fiinm,5,307,0.973,f,iin,m,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0022,tokn,4,300,1.089,t,ok,n,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0023,e89,3,292,1.023,,e,89,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0024,qokain,6,290,1.32,qo,ka,in,Herbal,Voynich A,Scribe 5,Amancio Keyword #4. Highly localized in early herbals.
+VMS_0025,tam,3,285,1.032,t,a,m,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0026,palm,4,279,1.053,p,al,m,Recipes,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0027,farm,4,272,0.987,f,ar,m,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0028,chor,4,270,1.28,ch,o,r,Herbal,Voynich A,Scribe 5,Amancio Keyword #5. Linked by Bax to 'Coriander/Caraway'.
+VMS_0029,peedin,6,266,1.056,p,eed,in,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0030,ok89,4,260,0.992,o,k,89,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0031,ams,3,255,0.986,,am,s,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0032,lkaiin,6,250,1.26,,lkai,in,Herbal,Voynich A,Scribe 1,Amancio Keyword #6. High-intermittency structural noun.
+VMS_0033,oor,3,250,1.014,o,o,r,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0034,qoar89,6,244,1.059,qo,ar,89,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0035,qol,3,240,1.24,qo,l,,Herbal,Voynich A,Scribe 5,Amancio Keyword #7. Topic marker in medicinal sections.
+VMS_0036,e9,2,240,0.992,,e,9,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0037,yolm,4,235,1.048,y,ol,m,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0038,ye,2,230,0.982,y,e,,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0039,dal,3,226,1.089,d,al,,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0040,eedn,4,222,0.995,,eed,n,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0041,lchedy,6,220,1.22,,lche,dy,Herbal,Voynich A,Scribe 1,Amancio Keyword #8. Highly selective word.
+VMS_0042,tokdy,5,218,1.022,t,ok,dy,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0043,eed,3,214,1.039,,eed,,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0044,sho,3,210,1.21,sh,o,,Herbal,Voynich A,Scribe 1,Amancio Keyword #9. Appears exclusively in specific herbal pages.
+VMS_0045,chors,5,210,1.039,ch,or,s,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0046,arm,3,206,0.989,,ar,m,Recipes,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0047,oiinon,6,203,1.089,o,iin,on,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0048,ot89,4,200,0.982,o,t,89,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0049,aiinin,6,196,0.974,,aiin,in,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0050,qokaiin,7,195,1.19,qo,kai,in,Herbal,Voynich A,Scribe 5,Amancio Keyword #10. Extremely common but intermittent.
+VMS_0051,parm,4,193,1.05,p,ar,m,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0052,or9,3,190,1.041,o,r,9,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0053,qooron,6,187,1.0,qo,or,on,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0054,samm,4,184,1.034,s,am,m,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0055,amy,3,181,0.972,,am,y,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0056,olkeedy,7,180,1.18,o,lkee,dy,Herbal,Voynich A,Scribe 5,Amancio Keyword #11. Localized plant name candidate.
+VMS_0057,aiindy,6,179,0.982,,aiin,dy,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0058,ceedr,5,176,1.375,c,eed,r,Balneological,Voynich B,Scribe 2,Synthetic keyword. High-intermittency profile.
+VMS_0059,calin,5,173,1.068,c,al,in,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0060,qooln,5,171,1.073,qo,ol,n,Balneological,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0061,qokal,5,170,1.16,qo,kal,,Herbal,Voynich A,Scribe 5,Amancio Keyword #12. Structural keyword.
+VMS_0062,ar,2,169,1.08,,a,r,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0063,talm,4,166,0.954,t,al,m,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0064,iin,3,164,1.002,,i,in,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0065,tors,4,162,0.957,t,or,s,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0066,qotain,6,160,1.15,qo,ta,in,Herbal,Voynich A,Scribe 5,Amancio Keyword #13. Scribe 1 specific keyword.
+VMS_0067,eedin,5,160,0.96,,eed,in,Recipes,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0068,paiin89,7,157,0.995,p,aiin,89,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0069,calm,4,155,1.013,c,al,m,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0070,dotr,4,153,0.95,d,ot,r,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0071,oty,3,151,1.016,o,t,y,Balneological,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0072,dchor,5,150,1.14,d,cho,r,Herbal,Voynich A,Scribe 1,Amancio Keyword #14. High-selectivity prefix-appended keyword.
+VMS_0073,kamon,5,150,1.045,k,am,on,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0074,ein,3,148,0.972,,e,in,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0075,ol89,4,146,1.083,o,l,89,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0076,alin,4,144,1.053,,al,in,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0077,oamm,4,142,1.034,o,am,m,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0078,sharm,5,141,1.093,sh,ar,m,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0079,otedy,5,140,1.12,o,te,dy,Herbal,Voynich A,Scribe 5,Amancio Keyword #15. Topic word in early folios.
+VMS_0080,keedm,5,139,0.974,k,eed,m,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0081,oarm,4,137,0.986,o,ar,m,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0082,iiny,4,136,1.031,,iin,y,Balneological,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0083,aln,3,134,0.981,,al,n,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0084,poks,4,133,0.951,p,ok,s,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0085,alr,3,131,1.06,,al,r,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0086,shen,4,130,1.0,sh,e,n,Recipes,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0087,kam9,4,129,1.31,k,am,9,Cosmological,Voynich A,Scribe 1,Synthetic keyword. High-intermittency profile.
+VMS_0088,fok,3,127,1.08,f,ok,,Balneological,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0089,chiinr,6,126,0.962,ch,iin,r,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0090,chora,5,125,1.42,ch,ora,,Herbal,Voynich A,Scribe 1,Bax proposed decoding: 'Coriander' (folio 33v).
+VMS_0091,qoaiin89,8,125,1.048,qo,aiin,89,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0092,ookin,5,123,1.05,o,ok,in,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0093,shiin9,6,122,1.095,sh,iin,9,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0094,am89,4,121,1.089,,am,89,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0095,chalin,6,120,1.054,ch,al,in,Recipes,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0096,pokr,4,118,0.96,p,ok,r,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0097,chol,4,117,1.341,ch,ol,,Cosmological,Voynich A,Scribe 1,Synthetic keyword. High-intermittency profile.
+VMS_0098,chamon,6,116,1.088,ch,am,on,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0099,kaur,4,115,1.37,k,au,r,Herbal,Voynich A,Scribe 1,Bax proposed decoding: 'Hellebore/Kaur' (winter hellebore on folio 17r).
+VMS_0100,kotin,5,115,0.963,k,ot,in,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0101,olr,3,114,1.024,o,l,r,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0102,eon,3,113,1.082,,e,on,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0103,tokin,5,112,1.058,t,ok,in,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0104,ooln,4,111,0.953,o,ol,n,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0105,es,2,110,1.033,,e,s,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0106,keedn,5,109,0.988,k,eed,n,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0107,cor9,4,108,1.061,c,or,9,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0108,tot89,5,107,0.994,t,ot,89,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0109,ok9,3,106,1.096,o,k,9,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0110,kentun,6,105,1.34,k,entu,n,Herbal,Voynich A,Scribe 5,Bax proposed decoding: 'Centaury/Kentun' (centaur plant on folio 2r).
+VMS_0111,amn,3,105,0.952,,am,n,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0112,shaiin,6,104,1.091,sh,ai,in,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0113,or89,4,103,1.053,o,r,89,Balneological,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0114,yeeds,5,102,1.043,y,eed,s,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0115,shiinr,6,101,1.043,sh,iin,r,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0116,yeon,4,100,0.974,y,e,on,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0117,doks,4,100,0.955,d,ok,s,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0118,kol,3,99,0.99,k,ol,,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0119,oal,3,98,0.972,o,al,,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0120,yok,3,97,1.062,y,ok,,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0121,shoron,6,96,1.091,sh,or,on,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0122,shorr,5,96,1.041,sh,or,r,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0123,arar,4,95,1.41,,ara,r,Herbal,Voynich A,Scribe 1,Bax proposed decoding: 'Juniper/Arar' (spiky plant on folio 16v).
+VMS_0124,ars,3,95,0.953,,ar,s,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0125,pok9,4,94,1.048,p,ok,9,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0126,otn,3,93,1.291,o,t,n,Cosmological,Voynich A,Scribe 5,Synthetic keyword. High-intermittency profile.
+VMS_0127,fory,4,93,1.024,f,or,y,Recipes,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0128,toky,4,92,0.967,t,ok,y,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0129,qoarn,5,91,0.978,qo,ar,n,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0130,tauran,6,90,1.49,t,aura,n,Astronomical,Voynich B,Scribe 2,Bax proposed decoding: 'Taurus' (the bull constellation on folio 68r).
+VMS_0131,shardy,6,90,1.032,sh,ar,dy,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0132,peon,4,90,1.033,p,e,on,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0133,dolon,5,89,0.991,d,ol,on,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0134,oolr,4,88,1.04,o,ol,r,Recipes,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0135,yiinr,5,88,1.068,y,iin,r,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0136,siins,5,87,1.297,s,iin,s,Balneological,Voynich B,Scribe 4,Synthetic keyword. High-intermittency profile.
+VMS_0137,shaiinm,7,86,1.09,sh,aiin,m,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0138,ootr,4,86,1.062,o,ot,r,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0139,chal9,5,85,0.956,ch,al,9,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0140,corn,4,85,1.087,c,or,n,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0141,char89,6,84,1.095,ch,ar,89,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0142,char,4,83,1.051,ch,a,r,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0143,carn,4,83,0.955,c,ar,n,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0144,arin,4,82,1.015,,ar,in,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0145,koron,5,82,1.164,k,or,on,Herbal,Voynich A,Scribe 5,Synthetic keyword. High-intermittency profile.
+VMS_0146,par9,4,81,1.041,p,ar,9,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0147,ool9,4,81,1.046,o,ol,9,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0148,kashkash,8,80,1.36,k,ashkash,,Herbal,Voynich A,Scribe 5,Bax proposed decoding: 'Poppy/Kashkash' (fol. 29v).
+VMS_0149,okn,3,80,1.353,o,k,n,Balneological,Voynich B,Scribe 4,Synthetic keyword. High-intermittency profile.
+VMS_0150,aiinon,6,80,1.014,,aiin,on,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0151,sen,3,79,1.007,s,e,n,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0152,kiin,4,78,1.009,k,i,in,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0153,fokn,4,78,1.085,f,ok,n,Balneological,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0154,ces,3,77,1.063,c,e,s,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0155,dar,3,77,0.956,d,a,r,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0156,aiin89,6,76,1.248,,aiin,89,Cosmological,Voynich A,Scribe 5,Synthetic keyword. High-intermittency profile.
+VMS_0157,samn,4,76,1.239,s,am,n,Astronomical,Voynich A,Scribe 5,Synthetic keyword. High-intermittency profile.
+VMS_0158,shor,4,75,1.408,sh,o,r,Recipes,Voynich B,Scribe 2,Synthetic keyword. High-intermittency profile.
+VMS_0159,cheedr,6,75,1.03,ch,eed,r,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0160,karr,4,75,1.091,k,ar,r,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0161,shokm,5,74,1.042,sh,ok,m,Recipes,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0162,olon,4,74,0.968,o,l,on,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0163,sol,3,73,1.031,s,ol,,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0164,feed9,5,73,1.048,f,eed,9,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0165,sokin,5,72,1.093,s,ok,in,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0166,ary,3,72,0.991,,ar,y,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0167,shors,5,71,1.165,sh,or,s,Astronomical,Voynich A,Scribe 1,Synthetic keyword. High-intermittency profile.
+VMS_0168,amin,4,71,1.065,,am,in,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0169,oaiins,6,71,1.079,o,aiin,s,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0170,tiin89,6,70,0.954,t,iin,89,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0171,oot9,4,70,0.969,o,ot,9,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0172,kory,4,69,0.966,k,or,y,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0173,ot,2,69,1.08,o,t,,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0174,shory,5,68,0.96,sh,or,y,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0175,peedr,5,68,1.309,p,eed,r,Cosmological,Voynich A,Scribe 5,Synthetic keyword. High-intermittency profile.
+VMS_0176,chor89,6,68,1.048,ch,or,89,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0177,oalin,5,67,1.074,o,al,in,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0178,yaiinon,7,67,0.973,y,aiin,on,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0179,or,2,67,1.061,o,r,,Balneological,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0180,peed89,6,66,1.081,p,eed,89,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0181,koks,4,66,0.966,k,ok,s,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0182,ar89,4,65,1.033,,ar,89,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0183,pem,3,65,1.396,p,e,m,Pharmaceutical,Voynich A,Scribe 5,Synthetic keyword. High-intermittency profile.
+VMS_0184,tokon,5,65,0.991,t,ok,on,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0185,cok,3,64,1.049,c,ok,,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0186,oaly,4,64,0.997,o,al,y,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0187,pot,3,64,0.974,p,ot,,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0188,orr,3,63,1.016,o,r,r,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0189,sarn,4,63,0.996,s,ar,n,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0190,pok,3,63,0.982,p,ok,,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0191,saiin,5,62,1.015,s,ai,in,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0192,key,3,62,1.079,k,e,y,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0193,cams,4,62,1.053,c,am,s,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0194,ors,3,61,0.962,o,r,s,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0195,oaiin89,7,61,0.967,o,aiin,89,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0196,aiin9,5,61,0.972,,aiin,9,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0197,shars,5,60,1.098,sh,ar,s,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0198,faiin,5,60,1.016,f,ai,in,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0199,pok89,5,60,1.018,p,ok,89,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0200,sor89,5,60,1.026,s,or,89,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0201,cot9,4,59,1.285,c,ot,9,Astronomical,Voynich A,Scribe 1,Synthetic keyword. High-intermittency profile.
+VMS_0202,yeeddy,6,59,1.016,y,eed,dy,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0203,pamon,5,59,1.066,p,am,on,Recipes,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0204,fary,4,58,1.052,f,ar,y,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0205,sarr,4,58,1.056,s,ar,r,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0206,char9,5,58,1.074,ch,ar,9,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0207,torr,4,57,0.953,t,or,r,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0208,en,2,57,1.1,,e,n,Balneological,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0209,orm,3,57,1.083,o,r,m,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0210,pam9,4,57,1.075,p,am,9,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0211,dol,3,56,1.058,d,ol,,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0212,kolin,5,56,1.071,k,ol,in,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0213,shiinm,6,56,1.095,sh,iin,m,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0214,diin,4,56,1.006,d,i,in,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0215,tor9,4,55,1.086,t,or,9,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0216,yey,3,55,1.274,y,e,y,Cosmological,Voynich A,Scribe 5,Synthetic keyword. High-intermittency profile.
+VMS_0217,aiiny,5,55,0.971,,aiin,y,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0218,shamn,5,55,0.951,sh,am,n,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0219,peedon,6,54,0.968,p,eed,on,Balneological,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0220,pol,3,54,1.025,p,ol,,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0221,eed9,4,54,0.95,,eed,9,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0222,taiin,5,54,1.026,t,ai,in,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0223,ciiny,5,53,1.002,c,iin,y,Recipes,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0224,yoty,4,53,1.003,y,ot,y,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0225,darn,4,53,1.072,d,ar,n,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0226,shokdy,6,53,1.083,sh,ok,dy,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0227,qoar,4,52,1.067,qo,a,r,Recipes,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0228,yaiinr,6,52,1.084,y,aiin,r,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0229,doly,4,52,1.306,d,ol,y,Herbal,Voynich A,Scribe 1,Synthetic keyword. High-intermittency profile.
+VMS_0230,yal9,4,52,0.998,y,al,9,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0231,siinr,5,51,1.017,s,iin,r,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0232,aiinr,5,51,1.097,,aiin,r,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0233,fam9,4,51,1.052,f,am,9,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0234,ory,3,51,1.092,o,r,y,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0235,foly,4,51,0.962,f,ol,y,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0236,chaiinin,8,50,1.158,ch,aiin,in,Balneological,Voynich B,Scribe 3,Synthetic keyword. High-intermittency profile.
+VMS_0237,cheed,5,50,1.056,ch,eed,,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0238,sol9,4,50,1.018,s,ol,9,Recipes,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0239,yary,4,50,1.056,y,ar,y,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0240,sam9,4,50,1.026,s,am,9,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0241,dedy,4,49,1.036,d,e,dy,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0242,tam89,5,49,1.01,t,am,89,Recipes,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0243,tals,4,49,1.096,t,al,s,Recipes,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0244,oly,3,49,1.074,o,l,y,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0245,damdy,5,48,1.028,d,am,dy,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0246,tiinon,6,48,1.093,t,iin,on,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0247,iin89,5,48,0.975,,iin,89,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0248,pokdy,5,48,1.092,p,ok,dy,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0249,er,2,48,0.955,,e,r,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0250,fiinr,5,48,0.961,f,iin,r,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0251,daiiny,6,47,1.079,d,aiin,y,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0252,shorin,6,47,0.958,sh,or,in,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0253,che9,4,47,1.09,ch,e,9,Recipes,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0254,doln,4,47,0.996,d,ol,n,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0255,aiin,4,47,1.04,,ai,in,Recipes,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0256,seed,4,46,0.97,s,eed,,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0257,chaiin,6,46,1.034,ch,ai,in,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0258,yalm,4,46,1.098,y,al,m,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0259,dory,4,46,1.005,d,or,y,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0260,eeddy,5,46,0.971,,eed,dy,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0261,tol,3,45,0.971,t,ol,,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0262,choton,6,45,1.026,ch,ot,on,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0263,kotdy,5,45,1.051,k,ot,dy,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0264,kar,3,45,1.095,k,a,r,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0265,kok9,4,45,1.058,k,ok,9,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0266,dalr,4,45,1.042,d,al,r,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0267,kokm,4,44,0.999,k,ok,m,Recipes,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0268,chaiinn,7,44,1.253,ch,aiin,n,Astronomical,Voynich A,Scribe 1,Synthetic keyword. High-intermittency profile.
+VMS_0269,karon,5,44,0.979,k,ar,on,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0270,iinon,5,44,1.056,,iin,on,Recipes,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0271,colon,5,44,1.036,c,ol,on,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0272,chaiin9,7,44,0.993,ch,aiin,9,Recipes,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0273,oln,3,43,1.074,o,l,n,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0274,qoeed9,6,43,1.09,qo,eed,9,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0275,oiindy,6,43,1.177,o,iin,dy,Pharmaceutical,Voynich A,Scribe 5,Synthetic keyword. High-intermittency profile.
+VMS_0276,dokr,4,43,0.978,d,ok,r,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0277,sok,3,43,0.966,s,ok,,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0278,arn,3,43,0.97,,ar,n,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0279,oorn,4,43,1.058,o,or,n,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0280,sotin,5,42,1.078,s,ot,in,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0281,damin,5,42,1.008,d,am,in,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0282,ciins,5,42,1.048,c,iin,s,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0283,charon,6,42,1.046,ch,ar,on,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0284,oen,3,42,1.062,o,e,n,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0285,oes,3,42,0.962,o,e,s,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0286,cor89,5,41,1.032,c,or,89,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0287,otm,3,41,0.958,o,t,m,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0288,shot,4,41,1.071,sh,ot,,Recipes,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0289,iinin,5,41,0.957,,iin,in,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0290,tok89,5,41,1.292,t,ok,89,Astronomical,Voynich A,Scribe 5,Synthetic keyword. High-intermittency profile.
+VMS_0291,darr,4,41,1.084,d,ar,r,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0292,chal,4,41,1.412,ch,al,,Balneological,Voynich B,Scribe 4,Synthetic keyword. High-intermittency profile.
+VMS_0293,cor,3,40,1.029,c,o,r,Recipes,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0294,qookn,5,40,1.032,qo,ok,n,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0295,oe9,3,40,1.091,o,e,9,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0296,qoardy,6,40,0.96,qo,ar,dy,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0297,otdy,4,40,0.957,o,t,dy,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0298,edy,3,40,1.099,,e,dy,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0299,kots,4,40,1.073,k,ot,s,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0300,cheedy,6,40,1.351,ch,ee,dy,Pharmaceutical,Voynich A,Scribe 5,Synthetic keyword. High-intermittency profile.
+VMS_0301,tolin,5,39,1.056,t,ol,in,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0302,chey,4,39,1.088,ch,e,y,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0303,ey,2,39,1.086,,e,y,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0304,korn,4,39,1.359,k,or,n,Recipes,Voynich B,Scribe 4,Synthetic keyword. High-intermittency profile.
+VMS_0305,taron,5,39,1.082,t,ar,on,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0306,caiins,6,39,1.061,c,aiin,s,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0307,otr,3,39,0.979,o,t,r,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0308,ooly,4,38,1.073,o,ol,y,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0309,shol,4,38,0.975,sh,ol,,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0310,deeddy,6,38,1.076,d,eed,dy,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0311,fokr,4,38,1.045,f,ok,r,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0312,qoey,4,38,1.046,qo,e,y,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0313,fol,3,38,1.012,f,ol,,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0314,seeddy,6,38,1.055,s,eed,dy,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0315,dorm,4,38,0.979,d,or,m,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0316,oiin89,6,37,1.079,o,iin,89,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0317,chars,5,37,1.442,ch,ar,s,Pharmaceutical,Voynich A,Scribe 5,Synthetic keyword. High-intermittency profile.
+VMS_0318,par,3,37,1.244,p,a,r,Balneological,Voynich B,Scribe 2,Synthetic keyword. High-intermittency profile.
+VMS_0319,kalon,5,37,0.986,k,al,on,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0320,taiin9,6,37,1.053,t,aiin,9,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0321,choron,6,37,1.057,ch,or,on,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0322,al9,3,37,0.998,,al,9,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0323,teeddy,6,37,1.033,t,eed,dy,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0324,cal,3,37,1.067,c,al,,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0325,iinn,4,36,0.975,,iin,n,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0326,shotn,5,36,0.996,sh,ot,n,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0327,paly,4,36,1.015,p,al,y,Recipes,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0328,diinin,6,36,0.977,d,iin,in,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0329,sars,4,36,0.999,s,ar,s,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0330,peed,4,36,0.954,p,eed,,Recipes,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0331,keon,4,36,0.96,k,e,on,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0332,daron,5,36,1.057,d,ar,on,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0333,kaly,4,36,1.072,k,al,y,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0334,yory,4,35,1.042,y,or,y,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0335,eedm,4,35,1.036,,eed,m,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0336,okon,4,35,1.094,o,k,on,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0337,kamy,4,35,0.981,k,am,y,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0338,yoln,4,35,0.995,y,ol,n,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0339,kem,3,35,1.034,k,e,m,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0340,tamin,5,35,0.989,t,am,in,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0341,faiins,6,35,0.967,f,aiin,s,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0342,pory,4,35,0.996,p,or,y,Balneological,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0343,deeds,5,34,1.008,d,eed,s,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0344,tar9,4,34,1.023,t,ar,9,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0345,sham,4,34,1.034,sh,a,m,Recipes,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0346,foln,4,34,0.962,f,ol,n,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0347,oiin,4,34,0.993,o,i,in,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0348,sheeds,6,34,1.066,sh,eed,s,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0349,qoolr,5,34,1.075,qo,ol,r,Balneological,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0350,oky,3,34,0.963,o,k,y,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0351,kot9,4,34,1.068,k,ot,9,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0352,paiins,6,34,0.999,p,aiin,s,Recipes,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0353,for,3,33,1.012,f,o,r,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0354,parr,4,33,0.961,p,ar,r,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0355,kiiny,5,33,1.023,k,iin,y,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0356,orn,3,33,1.055,o,r,n,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0357,chein,5,33,0.998,ch,e,in,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0358,pamn,4,33,1.084,p,am,n,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0359,amdy,4,33,1.278,,am,dy,Recipes,Voynich B,Scribe 4,Synthetic keyword. High-intermittency profile.
+VMS_0360,fiin,4,33,1.232,f,i,in,Recipes,Voynich B,Scribe 4,Synthetic keyword. High-intermittency profile.
+VMS_0361,yaiin9,6,33,1.044,y,aiin,9,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0362,oal89,5,33,1.022,o,al,89,Balneological,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0363,tardy,5,33,1.073,t,ar,dy,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0364,shor89,6,32,0.965,sh,or,89,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0365,fam,3,32,1.042,f,a,m,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0366,ke9,3,32,1.335,k,e,9,Cosmological,Voynich A,Scribe 1,Synthetic keyword. High-intermittency profile.
+VMS_0367,yor,3,32,1.06,y,o,r,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0368,cam89,5,32,1.04,c,am,89,Recipes,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0369,kokon,5,32,1.041,k,ok,on,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0370,sar,3,32,1.093,s,a,r,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0371,ool89,5,32,1.097,o,ol,89,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0372,dals,4,32,1.032,d,al,s,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0373,yokdy,5,32,0.956,y,ok,dy,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0374,cheedm,6,32,1.014,ch,eed,m,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0375,faron,5,32,1.059,f,ar,on,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0376,am9,3,31,1.002,,am,9,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0377,qoaiinon,8,31,0.989,qo,aiin,on,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0378,sholdy,6,31,1.035,sh,ol,dy,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0379,qoe,3,31,1.088,qo,e,,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0380,qoeedr,6,31,0.987,qo,eed,r,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0381,yotm,4,31,0.958,y,ot,m,Balneological,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0382,qoal,4,31,0.992,qo,al,,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0383,aiinn,5,31,1.383,,aiin,n,Recipes,Voynich B,Scribe 4,Synthetic keyword. High-intermittency profile.
+VMS_0384,oam,3,31,0.985,o,a,m,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0385,kokdy,5,31,1.006,k,ok,dy,Recipes,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0386,yein,4,31,1.094,y,e,in,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0387,yokm,4,31,1.084,y,ok,m,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0388,yot,3,30,1.073,y,ot,,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0389,qoal9,5,30,0.989,qo,al,9,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0390,chaiinon,8,30,1.092,ch,aiin,on,Balneological,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0391,por,3,30,1.02,p,o,r,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0392,shiin89,7,30,1.053,sh,iin,89,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0393,fiin9,5,30,1.011,f,iin,9,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0394,te,2,30,1.069,t,e,,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0395,car89,5,30,0.989,c,ar,89,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0396,ol,2,30,1.28,o,l,,Recipes,Voynich B,Scribe 3,Synthetic keyword. High-intermittency profile.
+VMS_0397,diin9,5,30,1.043,d,iin,9,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0398,shaln,5,30,0.992,sh,al,n,Balneological,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0399,feedm,5,30,1.098,f,eed,m,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0400,tols,4,30,1.008,t,ol,s,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0401,oton,4,29,1.099,o,t,on,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0402,pe89,4,29,0.986,p,e,89,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0403,kokin,5,29,1.097,k,ok,in,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0404,damy,4,29,1.055,d,am,y,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0405,aiins,5,29,1.092,,aiin,s,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0406,daiin,5,29,1.056,d,ai,in,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0407,taiiny,6,29,1.049,t,aiin,y,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0408,iin9,4,29,1.016,,iin,9,Recipes,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0409,dalon,5,29,1.059,d,al,on,Recipes,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0410,chot,4,29,1.088,ch,ot,,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0411,cory,4,29,1.083,c,or,y,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0412,se89,4,29,1.068,s,e,89,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0413,choly,5,29,0.965,ch,ol,y,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0414,parin,5,28,0.961,p,ar,in,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0415,cham,4,28,1.096,ch,a,m,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0416,keedon,6,28,0.964,k,eed,on,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0417,yokon,5,28,1.292,y,ok,on,Herbal,Voynich A,Scribe 5,Synthetic keyword. High-intermittency profile.
+VMS_0418,cholon,6,28,1.032,ch,ol,on,Balneological,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0419,olin,4,28,1.035,o,l,in,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0420,okm,3,28,1.03,o,k,m,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0421,fot,3,28,1.285,f,ot,,Balneological,Voynich B,Scribe 2,Synthetic keyword. High-intermittency profile.
+VMS_0422,ar9,3,28,0.989,,ar,9,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0423,yorr,4,28,1.078,y,or,r,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0424,qootr,5,28,0.972,qo,ot,r,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0425,yor89,5,28,1.08,y,or,89,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0426,sals,4,28,0.956,s,al,s,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0427,potr,4,28,1.083,p,ot,r,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0428,qooly,5,28,1.073,qo,ol,y,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0429,shar,4,27,0.97,sh,a,r,Recipes,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0430,taiinm,6,27,0.96,t,aiin,m,Recipes,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0431,okin,4,27,1.074,o,k,in,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0432,yar,3,27,1.039,y,a,r,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0433,shoty,5,27,1.084,sh,ot,y,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0434,yiin,4,27,1.078,y,i,in,Balneological,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0435,feon,4,27,1.027,f,e,on,Recipes,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0436,shiinon,7,27,1.074,sh,iin,on,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0437,qoeedy,6,27,1.039,qo,ee,dy,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0438,faiinon,7,27,1.093,f,aiin,on,Recipes,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0439,pal9,4,27,1.048,p,al,9,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0440,aldy,4,27,1.099,,al,dy,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0441,ken,3,27,1.352,k,e,n,Pharmaceutical,Voynich A,Scribe 1,Synthetic keyword. High-intermittency profile.
+VMS_0442,dar9,4,27,1.021,d,ar,9,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0443,car,3,27,1.062,c,a,r,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0444,caiinon,7,27,0.968,c,aiin,on,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0445,pot89,5,26,0.979,p,ot,89,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0446,cheeddy,7,26,0.973,ch,eed,dy,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0447,dor9,4,26,0.959,d,or,9,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0448,yamr,4,26,1.095,y,am,r,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0449,qoaiinm,7,26,1.052,qo,aiin,m,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0450,piin,4,26,0.995,p,i,in,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0451,totr,4,26,1.099,t,ot,r,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0452,shaiin9,7,26,1.425,sh,aiin,9,Cosmological,Voynich A,Scribe 1,Synthetic keyword. High-intermittency profile.
+VMS_0453,arr,3,26,0.988,,ar,r,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0454,aron,4,26,0.965,,ar,on,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0455,yeed89,6,26,1.068,y,eed,89,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0456,caldy,5,26,1.087,c,al,dy,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0457,ce,2,26,1.086,c,e,,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0458,dor89,5,26,0.965,d,or,89,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0459,shiindy,7,26,0.976,sh,iin,dy,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0460,ok,2,26,1.047,o,k,,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0461,shot89,6,26,1.001,sh,ot,89,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0462,shiinn,6,25,1.047,sh,iin,n,Balneological,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0463,doty,4,25,1.079,d,ot,y,Recipes,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0464,dol89,5,25,1.016,d,ol,89,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0465,totin,5,25,1.351,t,ot,in,Astronomical,Voynich A,Scribe 1,Synthetic keyword. High-intermittency profile.
+VMS_0466,kot,3,25,0.987,k,ot,,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0467,fal,3,25,1.084,f,al,,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0468,oaiindy,7,25,1.033,o,aiin,dy,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0469,oors,4,25,1.078,o,or,s,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0470,qoeed89,7,25,1.094,qo,eed,89,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0471,teedn,5,25,1.259,t,eed,n,Herbal,Voynich A,Scribe 1,Synthetic keyword. High-intermittency profile.
+VMS_0472,shaiins,7,25,1.057,sh,aiin,s,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0473,yorin,5,25,1.003,y,or,in,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0474,seed89,6,25,0.975,s,eed,89,Balneological,Voynich B,Scribe 2,Standard lexical unit.
+VMS_0475,kal,3,25,0.978,k,al,,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0476,qoars,5,25,1.084,qo,ar,s,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0477,tamdy,5,25,0.957,t,am,dy,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0478,sheed9,6,25,0.976,sh,eed,9,Balneological,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0479,dalm,4,25,1.055,d,al,m,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0480,tarin,5,25,0.994,t,ar,in,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0481,kar89,5,24,1.034,k,ar,89,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0482,falm,4,24,1.077,f,al,m,Herbal,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0483,oiin9,5,24,1.355,o,iin,9,Balneological,Voynich B,Scribe 3,Synthetic keyword. High-intermittency profile.
+VMS_0484,kiinm,5,24,1.072,k,iin,m,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0485,tiindy,6,24,1.266,t,iin,dy,Recipes,Voynich B,Scribe 4,Synthetic keyword. High-intermittency profile.
+VMS_0486,tok,3,24,1.043,t,ok,,Cosmological,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0487,fars,4,24,1.041,f,ar,s,Recipes,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0488,dam89,5,24,1.014,d,am,89,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0489,amon,4,24,1.02,,am,on,Balneological,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0490,solm,4,24,1.068,s,ol,m,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0491,deed,4,24,1.012,d,eed,,Pharmaceutical,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0492,cey,3,24,0.994,c,e,y,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0493,tar,3,24,1.017,t,a,r,Recipes,Voynich B,Scribe 4,Standard lexical unit.
+VMS_0494,pey,3,24,1.069,p,e,y,Herbal,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0495,tiin,4,24,1.066,t,i,in,Pharmaceutical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0496,eed89,5,24,1.044,,eed,89,Balneological,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0497,chorr,5,24,1.091,ch,or,r,Recipes,Voynich B,Scribe 3,Standard lexical unit.
+VMS_0498,qooldy,6,24,0.958,qo,ol,dy,Astronomical,Voynich A,Scribe 5,Standard lexical unit.
+VMS_0499,per,3,24,1.045,p,e,r,Cosmological,Voynich A,Scribe 1,Standard lexical unit.
+VMS_0500,qoorm,5,24,1.068,qo,or,m,Astronomical,Voynich A,Scribe 1,Standard lexical unit.
