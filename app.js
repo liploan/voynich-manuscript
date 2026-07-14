@@ -911,8 +911,8 @@ document.addEventListener('DOMContentLoaded', () => {
             {
               label: 'Conditional Bigram Entropy (Predictability)',
               data: condEntropy,
-              backgroundColor: 'rgba(236, 72, 153, 0.55)',
-              borderColor: '#ec4899',
+              backgroundColor: 'rgba(244, 114, 182, 0.55)',
+              borderColor: '#f472b6',
               borderWidth: 1
             }
           ]

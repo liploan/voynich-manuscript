@@ -14,9 +14,9 @@
   --color-herbal: #10b981;
   --color-astronomical: #38bdf8;
   --color-biological: #14b8a6;
-  --color-cosmological: #ec4899;
+  --color-cosmological: #f472b6;
   --color-pharmaceutical: #f59e0b;
-  --color-recipes: #f43f5e;
+  --color-recipes: #f87171;
   
   --font-display: 'Outfit', 'Inter', -apple-system, sans-serif;
   --font-body: 'Inter', -apple-system, sans-serif;
@@ -183,10 +183,10 @@ body {
 }
 
 .nav-tab.active {
-  background: var(--accent-color);
+  background: #0077b6;
   border-color: var(--accent-color);
   color: #fff;
-  box-shadow: 0 0 15px var(--accent-glow);
+  box-shadow: 0 0 15px rgba(0, 180, 216, 0.35);
 }
 
 .nav-icon {
@@ -449,7 +449,7 @@ body {
 }
 
 .btn-primary {
-  background: var(--accent-color);
+  background: #0077b6;
   border: none;
   color: #fff;
   padding: 0 28px;
@@ -459,13 +459,13 @@ body {
   font-size: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 0 12px var(--accent-glow);
+  box-shadow: 0 0 12px rgba(0, 180, 216, 0.25);
 }
 
 .btn-primary:hover {
-  background: #8e71ff;
+  background: #0096c7;
   transform: translateY(-1px);
-  box-shadow: 0 0 18px var(--accent-glow);
+  box-shadow: 0 0 18px rgba(0, 180, 216, 0.4);
 }
 
 .search-options {
@@ -936,12 +936,11 @@ body {
 }
 
 .tier-bax {
-  color: #ec4899;
-  text-shadow: 0 0 4px rgba(236, 72, 153, 0.1);
+  color: #f472b6;
 }
 
 .tier-bax .tier-label {
-  color: rgba(236, 72, 153, 0.6);
+  color: rgba(244, 114, 182, 0.7);
 }
 
 /* Hover highlights for token spans */
@@ -1155,7 +1154,7 @@ body {
   font-family: var(--font-display);
   font-size: 15px;
   font-weight: 700;
-  color: #ec4899;
+  color: #f472b6;
 }
 
 .glyph-desc {
@@ -1280,7 +1279,7 @@ body {
 
 .translit-val-phon {
   font-family: var(--font-display);
-  color: #ec4899;
+  color: #f472b6;
   font-weight: 700;
 }
 
