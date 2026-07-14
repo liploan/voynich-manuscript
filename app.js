@@ -760,10 +760,10 @@ document.addEventListener('DOMContentLoaded', () => {
           datasets: [{
             label: 'Frequency %',
             data: topChars.map(item => item.percentage),
-            backgroundColor: 'rgba(123, 89, 255, 0.6)',
-            borderColor: '#7b59ff',
+            backgroundColor: 'rgba(170, 61, 44, 0.65)',
+            borderColor: '#aa3d2c',
             borderWidth: 1,
-            hoverBackgroundColor: 'rgba(123, 89, 255, 0.85)',
+            hoverBackgroundColor: 'rgba(170, 61, 44, 0.85)',
           }]
         },
         options: {
@@ -774,12 +774,12 @@ document.addEventListener('DOMContentLoaded', () => {
           },
           scales: {
             y: {
-              grid: { color: 'rgba(135, 116, 255, 0.08)' },
-              ticks: { color: '#a79ebb' }
+              grid: { color: 'rgba(139, 115, 85, 0.12)' },
+              ticks: { color: '#5c4e40' }
             },
             x: {
               grid: { display: false },
-              ticks: { color: '#a79ebb', font: { family: 'Courier New', size: 14 } }
+              ticks: { color: '#5c4e40', font: { family: 'Courier New', size: 14 } }
             }
           }
         }
@@ -797,9 +797,10 @@ document.addEventListener('DOMContentLoaded', () => {
           datasets: [{
             label: 'Word Count',
             data: Object.values(dist),
-            backgroundColor: 'rgba(0, 229, 255, 0.5)',
-            borderColor: '#00e5ff',
+            backgroundColor: 'rgba(45, 90, 125, 0.6)',
+            borderColor: '#2d5a7d',
             borderWidth: 1,
+            hoverBackgroundColor: 'rgba(45, 90, 125, 0.85)',
           }]
         },
         options: {
@@ -810,12 +811,12 @@ document.addEventListener('DOMContentLoaded', () => {
           },
           scales: {
             y: {
-              grid: { color: 'rgba(135, 116, 255, 0.08)' },
-              ticks: { color: '#a79ebb' }
+              grid: { color: 'rgba(139, 115, 85, 0.12)' },
+              ticks: { color: '#5c4e40' }
             },
             x: {
               grid: { display: false },
-              ticks: { color: '#a79ebb' }
+              ticks: { color: '#5c4e40' }
             }
           }
         }
@@ -829,10 +830,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const frequencies = topWords.map(item => item.count);
       
       // Calculate ideal Zipf frequencies
-      // C = Max frequency * Rank 1 = frequencies[0]
       const C = frequencies[0];
       const zipfIdeal = ranks.map(r => C / r);
-
+ 
       const ctx = document.getElementById('zipf-chart').getContext('2d');
       charts.zipf = new Chart(ctx, {
         type: 'line',
@@ -842,8 +842,8 @@ document.addEventListener('DOMContentLoaded', () => {
             {
               label: 'Observed Frequency',
               data: frequencies,
-              borderColor: '#7b59ff',
-              backgroundColor: 'rgba(123, 89, 255, 0.1)',
+              borderColor: '#aa3d2c',
+              backgroundColor: 'rgba(170, 61, 44, 0.08)',
               borderWidth: 2,
               tension: 0.3,
               fill: true
@@ -851,7 +851,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
               label: 'Ideal Zipfian Curve',
               data: zipfIdeal,
-              borderColor: 'rgba(255, 255, 255, 0.35)',
+              borderColor: 'rgba(92, 78, 64, 0.45)',
               borderDash: [5, 5],
               borderWidth: 1.5,
               pointStyle: 'none',
@@ -865,18 +865,18 @@ document.addEventListener('DOMContentLoaded', () => {
           maintainAspectRatio: false,
           plugins: {
             legend: {
-              labels: { color: '#f1ecff' }
+              labels: { color: '#2b231d' }
             }
           },
           scales: {
             y: {
-              grid: { color: 'rgba(135, 116, 255, 0.08)' },
-              ticks: { color: '#a79ebb' }
+              grid: { color: 'rgba(139, 115, 85, 0.12)' },
+              ticks: { color: '#5c4e40' }
             },
             x: {
               grid: { display: false },
               ticks: {
-                color: '#a79ebb',
+                color: '#5c4e40',
                 font: { family: 'Courier New' },
                 maxRotation: 45,
                 minRotation: 45
@@ -887,14 +887,14 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   }
-
+ 
   // Render Comparative Section Chart
   function renderCompareChart() {
     if (!charts.compare) {
       const sections = ["Herbal", "Astronomical", "Biological", "Cosmological", "Pharmaceutical", "Recipes"];
       const unigramEntropy = sections.map(sect => statsData.sections[sect].unigram_entropy);
       const condEntropy = sections.map(sect => statsData.sections[sect].conditional_entropy);
-
+ 
       const ctx = document.getElementById('section-compare-chart').getContext('2d');
       charts.compare = new Chart(ctx, {
         type: 'bar',
@@ -904,15 +904,15 @@ document.addEventListener('DOMContentLoaded', () => {
             {
               label: 'Unigram Entropy (Glyph Variety)',
               data: unigramEntropy,
-              backgroundColor: 'rgba(135, 116, 255, 0.55)',
-              borderColor: '#8774ff',
+              backgroundColor: 'rgba(45, 90, 125, 0.65)',
+              borderColor: '#2d5a7d',
               borderWidth: 1
             },
             {
               label: 'Conditional Bigram Entropy (Predictability)',
               data: condEntropy,
-              backgroundColor: 'rgba(236, 72, 153, 0.55)',
-              borderColor: '#ec4899',
+              backgroundColor: 'rgba(170, 61, 44, 0.65)',
+              borderColor: '#aa3d2c',
               borderWidth: 1
             }
           ]
@@ -922,19 +922,19 @@ document.addEventListener('DOMContentLoaded', () => {
           maintainAspectRatio: false,
           plugins: {
             legend: {
-              labels: { color: '#f1ecff' }
+              labels: { color: '#2b231d' }
             }
           },
           scales: {
             y: {
-              grid: { color: 'rgba(135, 116, 255, 0.08)' },
-              ticks: { color: '#a79ebb' },
+              grid: { color: 'rgba(139, 115, 85, 0.12)' },
+              ticks: { color: '#5c4e40' },
               min: 0,
               max: 5
             },
             x: {
               grid: { display: false },
-              ticks: { color: '#a79ebb' }
+              ticks: { color: '#5c4e40' }
             }
           }
         }

@@ -8,26 +8,23 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: #0c081d;
-      color: #f1ecff;
+      font-family: 'EB Garamond', Georgia, serif;
+      background-color: #ece6d8;
+      color: #2b231d;
     }
     .font-display {
-      font-family: 'Outfit', sans-serif;
+      font-family: 'Cinzel', Georgia, serif;
     }
     .font-mono-code {
-      font-family: 'Space Grotesk', monospace;
+      font-family: 'Courier New', Courier, monospace;
     }
     .glass-panel {
-      background: rgba(22, 16, 47, 0.5);
-      border: 1px solid rgba(135, 116, 255, 0.15);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+      background: #fffcf8;
+      border: 1px solid rgba(139, 115, 85, 0.18);
+      box-shadow: 0 6px 24px rgba(60, 50, 40, 0.08);
     }
     .drag-card {
       cursor: grab;
@@ -39,16 +36,16 @@
     }
     .drag-card.dragging {
       opacity: 0.5;
-      border-color: #a78bfa;
-      box-shadow: 0 0 15px rgba(167, 139, 250, 0.4);
+      border-color: #aa3d2c;
+      box-shadow: 0 0 15px rgba(170, 61, 44, 0.4);
     }
     .word-capsule {
       cursor: pointer;
       transition: all 0.2s;
     }
     .word-capsule:hover {
-      background: rgba(135, 116, 255, 0.2);
-      border-color: rgba(135, 116, 255, 0.4);
+      background: rgba(170, 61, 44, 0.08);
+      border-color: rgba(170, 61, 44, 0.25);
       transform: translateY(-1px);
     }
     /* Scrollbar */
@@ -57,44 +54,44 @@
       height: 6px;
     }
     ::-webkit-scrollbar-track {
-      background: rgba(25, 20, 45, 0.2);
+      background: rgba(139, 115, 85, 0.05);
     }
     ::-webkit-scrollbar-thumb {
-      background: rgba(135, 116, 255, 0.25);
+      background: rgba(139, 115, 85, 0.25);
       border-radius: 3px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: rgba(135, 116, 255, 0.4);
+      background: rgba(139, 115, 85, 0.4);
     }
   </style>
 </head>
 <body class="h-screen w-screen overflow-hidden flex flex-col">
   <!-- Glowing Background Orbs -->
-  <div class="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none opacity-30">
-    <div class="absolute -top-40 -left-40 w-96 h-96 bg-purple-950 rounded-full filter blur-[120px] mix-blend-screen"></div>
-    <div class="absolute bottom-10 right-10 w-[450px] h-[450px] bg-indigo-950 rounded-full filter blur-[150px] mix-blend-screen"></div>
+  <div class="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none opacity-40">
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-amber-900/10 rounded-full filter blur-[120px] mix-blend-multiply"></div>
+    <div class="absolute bottom-10 right-10 w-[450px] h-[450px] bg-orange-950/10 rounded-full filter blur-[150px] mix-blend-multiply"></div>
   </div>
 
   <!-- Header -->
   <header class="h-16 shrink-0 glass-panel border-b flex items-center justify-between px-6 z-20">
     <div class="flex items-center gap-3">
-      <a href="index.html" class="p-2 rounded-lg hover:bg-white/5 transition duration-200 text-purple-400 hover:text-white" title="Return to Dashboard">
+      <a href="index.html" class="p-2 rounded-lg hover:bg-[#aa3d2c]/5 transition duration-200 text-[#aa3d2c] hover:text-[#882b1d]" title="Return to Dashboard">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
         </svg>
       </a>
       <div class="flex flex-col">
-        <h1 class="font-display font-extrabold text-lg bg-gradient-to-r from-white via-purple-300 to-pink-400 bg-clip-text text-transparent tracking-wide">
+        <h1 class="font-display font-extrabold text-lg text-[#aa3d2c] tracking-wide">
           VOYNICH DECIPHERMENT WORKSPACE
         </h1>
-        <span class="text-[9px] uppercase tracking-widest text-[#a79ebb] font-semibold">Codicological Reconstruction & Phonetic Vocalizer Toolset</span>
+        <span class="text-[9px] uppercase tracking-widest text-[#5c4e40] font-semibold">Codicological Reconstruction & Phonetic Vocalizer Toolset</span>
       </div>
       <!-- Tab Navigation Buttons -->
-      <div class="flex items-center gap-1.5 bg-[#16102f] border border-purple-500/20 rounded-lg p-1 ml-6 shrink-0 z-30 shadow-inner">
-        <button id="tab-collation" class="px-3 py-1 rounded-md text-[11px] font-semibold font-display transition duration-200 bg-purple-600 text-white shadow-sm" data-tab="collation-workspace">
+      <div class="flex items-center gap-1.5 bg-[#ece6d8] border border-amber-900/15 rounded-lg p-1 ml-6 shrink-0 z-30 shadow-inner">
+        <button id="tab-collation" class="px-3 py-1 rounded-md text-[11px] font-semibold font-display transition duration-200 bg-[#aa3d2c] text-white shadow-sm" data-tab="collation-workspace">
           Collation & Binding
         </button>
-        <button id="tab-botanical" class="px-3 py-1 rounded-md text-[11px] font-semibold font-display transition duration-200 text-[#a79ebb] hover:text-white hover:bg-white/5" data-tab="botanical-workspace">
+        <button id="tab-botanical" class="px-3 py-1 rounded-md text-[11px] font-semibold font-display transition duration-200 text-[#5c4e40] hover:text-[#2b231d] hover:bg-[#fffcf8]/50" data-tab="botanical-workspace">
           Botanical Matcher
         </button>
       </div>

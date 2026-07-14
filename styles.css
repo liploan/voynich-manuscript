@@ -1,25 +1,27 @@
 /* Global Styles & Variables */
 :root {
-  --bg-color: #0b0718;
-  --panel-bg: rgba(23, 17, 43, 0.45);
-  --panel-border: rgba(135, 116, 255, 0.12);
-  --panel-border-hover: rgba(135, 116, 255, 0.25);
-  --text-primary: #f1ecff;
-  --text-secondary: #a79ebb;
-  --text-muted: #6e6485;
-  --accent-color: #7b59ff;
-  --accent-glow: rgba(123, 89, 255, 0.4);
+  --bg-color: #f6ebd4;   /* Aged parchment page background */
+  --desk-bg: #ece6d8;    /* Background workspace shadow */
+  --panel-bg: #fffcf8;   /* Crisp linen manuscript paper panel */
+  --panel-border: rgba(139, 115, 85, 0.22);
+  --panel-border-hover: rgba(139, 115, 85, 0.42);
+  --text-primary: #2b231d;   /* Iron-gall ink color */
+  --text-secondary: #5c4e40; /* Sepia walnut secondary text */
+  --text-muted: #8c7a6b;     /* Faded ink metadata */
+  --accent-color: #aa3d2c;   /* Rubrication red (medieval red ink) */
+  --accent-glow: rgba(170, 61, 44, 0.15);
   
-  /* Section specific colors */
-  --color-herbal: #10b981;
-  --color-astronomical: #38bdf8;
-  --color-biological: #14b8a6;
-  --color-cosmological: #ec4899;
-  --color-pharmaceutical: #f59e0b;
-  --color-recipes: #f43f5e;
+  /* Muted alchemical colors for sections */
+  --color-herbal: #3b7b5f;         /* Muted verdigris green */
+  --color-astronomical: #2d5a7d;   /* Lapis lazuli blue */
+  --color-biological: #4f8087;      /* Slate teal */
+  --color-cosmological: #8a3f69;    /* Muted madder violet */
+  --color-pharmaceutical: #c68532;  /* Ochre amber */
+  --color-recipes: #a33835;        /* Cinnabar red */
   
-  --font-display: 'Outfit', 'Inter', -apple-system, sans-serif;
-  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-display: 'Cinzel', Georgia, serif;
+  --font-body: 'EB Garamond', Georgia, serif;
+  --font-mono-code: 'Courier New', Courier, monospace;
 }
 
 * {
@@ -45,10 +47,11 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  background: 
-    radial-gradient(circle at 10% 20%, rgba(98, 0, 234, 0.15) 0%, transparent 40%),
-    radial-gradient(circle at 80% 80%, rgba(0, 229, 255, 0.08) 0%, transparent 40%),
-    radial-gradient(circle at 50% 50%, rgba(123, 89, 255, 0.05) 0%, transparent 50%);
+  background-color: var(--desk-bg);
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.45) 0%, transparent 80%),
+    radial-gradient(circle at 10% 10%, rgba(139, 115, 85, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 90% 90%, rgba(139, 115, 85, 0.08) 0%, transparent 60%);
   background-size: cover;
   pointer-events: none;
 }
@@ -89,9 +92,7 @@ body {
   background: var(--panel-bg);
   border: 1px solid var(--panel-border);
   border-radius: 16px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 20px rgba(60, 50, 40, 0.06);
 }
 
 .header-logo {
@@ -104,7 +105,7 @@ body {
   width: 44px;
   height: 44px;
   color: var(--accent-color);
-  filter: drop-shadow(0 0 8px var(--accent-glow));
+  filter: drop-shadow(0 2px 4px rgba(170, 61, 44, 0.25));
 }
 
 .logo-text h1 {
@@ -112,7 +113,7 @@ body {
   font-size: 26px;
   font-weight: 800;
   letter-spacing: 1.5px;
-  background: linear-gradient(135deg, #fff 40%, #a78bfa 100%);
+  background: linear-gradient(135deg, var(--accent-color) 30%, var(--text-primary) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -146,8 +147,7 @@ body {
   font-family: var(--font-display);
   font-size: 18px;
   font-weight: 600;
-  color: #fff;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  color: var(--accent-color);
 }
 
 /* Navigation tabs */
@@ -264,10 +264,10 @@ body {
 .custom-input {
   width: 100%;
   padding: 10px 14px;
-  background: rgba(10, 6, 20, 0.6);
+  background: rgba(139, 115, 85, 0.05);
   border: 1px solid var(--panel-border);
   border-radius: 8px;
-  color: #fff;
+  color: var(--text-primary);
   font-family: var(--font-body);
   font-size: 14px;
   outline: none;
@@ -300,12 +300,12 @@ body {
 }
 
 .folio-item:hover {
-  background: rgba(135, 116, 255, 0.08);
+  background: rgba(170, 61, 44, 0.05);
 }
 
 .folio-item.active {
-  background: rgba(123, 89, 255, 0.15);
-  border-color: rgba(123, 89, 255, 0.3);
+  background: rgba(170, 61, 44, 0.12);
+  border-color: rgba(170, 61, 44, 0.3);
 }
 
 .folio-name {
@@ -322,13 +322,13 @@ body {
 }
 
 /* Section specific tags & boundaries */
-.tag-herbal { background: rgba(16, 185, 129, 0.15); color: var(--color-herbal); }
-.tag-astronomical { background: rgba(56, 189, 248, 0.15); color: var(--color-astronomical); }
-.tag-biological { background: rgba(20, 184, 166, 0.15); color: var(--color-biological); }
-.tag-cosmological { background: rgba(236, 72, 153, 0.15); color: var(--color-cosmological); }
-.tag-pharmaceutical { background: rgba(245, 158, 11, 0.15); color: var(--color-pharmaceutical); }
-.tag-recipes { background: rgba(244, 63, 94, 0.15); color: var(--color-recipes); }
-.tag-other { background: rgba(110, 100, 133, 0.15); color: var(--text-secondary); }
+.tag-herbal { background: rgba(59, 123, 95, 0.12); color: var(--color-herbal); }
+.tag-astronomical { background: rgba(45, 90, 125, 0.12); color: var(--color-astronomical); }
+.tag-biological { background: rgba(79, 128, 135, 0.12); color: var(--color-biological); }
+.tag-cosmological { background: rgba(138, 63, 105, 0.12); color: var(--color-cosmological); }
+.tag-pharmaceutical { background: rgba(198, 133, 50, 0.12); color: var(--color-pharmaceutical); }
+.tag-recipes { background: rgba(163, 56, 53, 0.12); color: var(--color-recipes); }
+.tag-other { background: rgba(140, 122, 107, 0.12); color: var(--text-secondary); }
 
 .explorer-viewer {
   display: flex;
@@ -353,7 +353,7 @@ body {
 .viewer-title-area h2 {
   font-family: var(--font-display);
   font-size: 24px;
-  color: #fff;
+  color: var(--text-primary);
 }
 
 .section-tag {
@@ -380,7 +380,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  background: rgba(10, 6, 20, 0.3);
+  background: rgba(139, 115, 85, 0.03);
 }
 
 .text-line {
@@ -392,7 +392,7 @@ body {
 }
 
 .text-line:hover {
-  background: rgba(135, 116, 255, 0.05);
+  background: rgba(170, 61, 44, 0.04);
 }
 
 .line-indicator {
@@ -427,7 +427,7 @@ body {
   font-family: var(--font-display);
   font-size: 22px;
   margin-bottom: 6px;
-  color: #fff;
+  color: var(--text-primary);
 }
 
 .panel-desc {
@@ -459,13 +459,13 @@ body {
   font-size: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 0 12px var(--accent-glow);
+  box-shadow: 0 2px 6px rgba(170, 61, 44, 0.2);
 }
 
 .btn-primary:hover {
-  background: #8e71ff;
+  background: #882b1d;
   transform: translateY(-1px);
-  box-shadow: 0 0 18px var(--accent-glow);
+  box-shadow: 0 4px 12px rgba(170, 61, 44, 0.35);
 }
 
 .search-options {
@@ -498,7 +498,7 @@ body {
   left: 0;
   height: 18px;
   width: 18px;
-  background-color: rgba(10, 6, 20, 0.6);
+  background-color: rgba(139, 115, 85, 0.08);
   border: 1px solid var(--panel-border);
   border-radius: 4px;
 }
@@ -541,7 +541,7 @@ body {
 
 .results-meta {
   padding: 12px 24px;
-  background: rgba(10, 6, 20, 0.2);
+  background: rgba(139, 115, 85, 0.03);
   border-bottom: 1px solid var(--panel-border);
   font-size: 12px;
   color: var(--text-secondary);
@@ -550,7 +550,7 @@ body {
 .search-results-table-container {
   flex-grow: 1;
   overflow-y: auto;
-  background: rgba(10, 6, 20, 0.15);
+  background: transparent;
 }
 
 .results-table {
@@ -571,7 +571,7 @@ body {
   color: var(--text-secondary);
   position: sticky;
   top: 0;
-  background: #17112b;
+  background: var(--panel-bg);
   z-index: 1;
 }
 
@@ -580,7 +580,7 @@ body {
 }
 
 .results-table tbody tr:hover {
-  background: rgba(135, 116, 255, 0.04);
+  background: rgba(170, 61, 44, 0.04);
 }
 
 .results-table td {
@@ -594,12 +594,11 @@ body {
 }
 
 .search-highlight {
-  background: rgba(255, 235, 59, 0.25);
-  color: #ffeb3b;
+  background: #fef08a;
+  color: #1e1b4b;
   font-weight: bold;
-  padding: 0 2px;
-  border-radius: 2px;
-  border-bottom: 1px solid #ffeb3b;
+  padding: 2px 4px;
+  border-radius: 3px;
 }
 
 /* Panel 3: Charts Layout */
@@ -624,7 +623,7 @@ body {
 .chart-header h3 {
   font-family: var(--font-display);
   font-size: 18px;
-  color: #fff;
+  color: var(--text-primary);
   margin-bottom: 4px;
 }
 
@@ -679,14 +678,13 @@ body {
   font-family: var(--font-display);
   font-size: 20px;
   font-weight: 700;
-  color: #fff;
+  color: var(--text-primary);
 }
 
 .card-indicator {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  box-shadow: 0 0 10px currentColor;
 }
 
 .card-stats {
@@ -710,12 +708,12 @@ body {
   font-family: var(--font-display);
   font-size: 15px;
   font-weight: 600;
-  color: #fff;
+  color: var(--text-primary);
 }
 
 .card-vocab-preview {
   margin-top: auto;
-  border-top: 1px solid rgba(135, 116, 255, 0.08);
+  border-top: 1px solid rgba(139, 115, 85, 0.1);
   padding-top: 12px;
 }
 

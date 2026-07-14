@@ -1471,15 +1471,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // Wire Tab Switching
   if (tabCollation && tabBotanical) {
     tabCollation.addEventListener('click', () => {
-      tabCollation.className = 'px-3 py-1 rounded-md text-[11px] font-semibold font-display transition duration-200 bg-purple-600 text-white shadow-sm';
-      tabBotanical.className = 'px-3 py-1 rounded-md text-[11px] font-semibold font-display transition duration-200 text-[#a79ebb] hover:text-white hover:bg-white/5';
+      tabCollation.className = 'px-3 py-1 rounded-md text-[11px] font-semibold font-display transition duration-200 bg-[#aa3d2c] text-white shadow-sm';
+      tabBotanical.className = 'px-3 py-1 rounded-md text-[11px] font-semibold font-display transition duration-200 text-[#5c4e40] hover:text-[#2b231d] hover:bg-[#fffcf8]/50';
       collationWorkspace.classList.remove('hidden');
       botanicalWorkspace.classList.add('hidden');
     });
 
     tabBotanical.addEventListener('click', () => {
-      tabBotanical.className = 'px-3 py-1 rounded-md text-[11px] font-semibold font-display transition duration-200 bg-purple-600 text-white shadow-sm';
-      tabCollation.className = 'px-3 py-1 rounded-md text-[11px] font-semibold font-display transition duration-200 text-[#a79ebb] hover:text-white hover:bg-white/5';
+      tabBotanical.className = 'px-3 py-1 rounded-md text-[11px] font-semibold font-display transition duration-200 bg-[#aa3d2c] text-white shadow-sm';
+      tabCollation.className = 'px-3 py-1 rounded-md text-[11px] font-semibold font-display transition duration-200 text-[#5c4e40] hover:text-[#2b231d] hover:bg-[#fffcf8]/50';
       collationWorkspace.classList.add('hidden');
       botanicalWorkspace.classList.remove('hidden');
       
