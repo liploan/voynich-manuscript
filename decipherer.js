@@ -538,7 +538,7 @@ document.addEventListener('DOMContentLoaded', () => {
       card.innerHTML = `
         <div class="flex items-center gap-2 pointer-events-none min-w-0 flex-grow">
           <div class="flex flex-col gap-0.5 items-center justify-center shrink-0 w-6">
-            <span class="text-[10px] text-[#a79ebb] font-semibold font-mono-code">#${idx + 1}</span>
+            <span class="text-[10px] text-[#94a3b8] font-semibold font-mono-code">#${idx + 1}</span>
             <svg class="w-3 h-3 text-[#6e6485]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
             </svg>
@@ -744,9 +744,9 @@ document.addEventListener('DOMContentLoaded', () => {
           wordSpan.addEventListener('click', () => {
             speakWord(wordText);
             // Flash color animation
-            wordSpan.classList.add('bg-purple-600', 'border-purple-400');
+            wordSpan.classList.add('bg-blue-600', 'border-purple-400');
             setTimeout(() => {
-              wordSpan.classList.remove('bg-purple-600', 'border-purple-400');
+              wordSpan.classList.remove('bg-blue-600', 'border-purple-400');
             }, 300);
           });
 
@@ -1081,8 +1081,8 @@ document.addEventListener('DOMContentLoaded', () => {
         nCell.className += 'bg-purple-950/10 border-purple-500/10 text-[#6e6485]';
         connector.textContent = ' ';
       } else {
-        vCell.className += 'bg-purple-950/30 border-purple-500/20 text-[#a79ebb]';
-        nCell.className += 'bg-purple-950/30 border-purple-500/20 text-[#a79ebb]';
+        vCell.className += 'bg-purple-950/30 border-purple-500/20 text-[#94a3b8]';
+        nCell.className += 'bg-purple-950/30 border-purple-500/20 text-[#94a3b8]';
         connector.textContent = '·';
         connector.className += 'text-[#6e6485]';
       }
@@ -1471,15 +1471,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // Wire Tab Switching
   if (tabCollation && tabBotanical) {
     tabCollation.addEventListener('click', () => {
-      tabCollation.className = 'px-3 py-1 rounded-md text-[11px] font-semibold font-display transition duration-200 bg-[#aa3d2c] text-white shadow-sm';
-      tabBotanical.className = 'px-3 py-1 rounded-md text-[11px] font-semibold font-display transition duration-200 text-[#5c4e40] hover:text-[#2b231d] hover:bg-[#fffcf8]/50';
+      tabCollation.className = 'px-3 py-1 rounded-md text-[11px] font-semibold font-display transition duration-200 bg-blue-600 text-white shadow-sm';
+      tabBotanical.className = 'px-3 py-1 rounded-md text-[11px] font-semibold font-display transition duration-200 text-[#94a3b8] hover:text-white hover:bg-white/5';
       collationWorkspace.classList.remove('hidden');
       botanicalWorkspace.classList.add('hidden');
     });
 
     tabBotanical.addEventListener('click', () => {
-      tabBotanical.className = 'px-3 py-1 rounded-md text-[11px] font-semibold font-display transition duration-200 bg-[#aa3d2c] text-white shadow-sm';
-      tabCollation.className = 'px-3 py-1 rounded-md text-[11px] font-semibold font-display transition duration-200 text-[#5c4e40] hover:text-[#2b231d] hover:bg-[#fffcf8]/50';
+      tabBotanical.className = 'px-3 py-1 rounded-md text-[11px] font-semibold font-display transition duration-200 bg-blue-600 text-white shadow-sm';
+      tabCollation.className = 'px-3 py-1 rounded-md text-[11px] font-semibold font-display transition duration-200 text-[#94a3b8] hover:text-white hover:bg-white/5';
       collationWorkspace.classList.add('hidden');
       botanicalWorkspace.classList.remove('hidden');
       
@@ -1634,8 +1634,8 @@ document.addEventListener('DOMContentLoaded', () => {
           const isSel = idx === proposalIndex;
           btn.className = `px-2.5 py-1 text-[9px] rounded font-semibold font-mono-code transition duration-200 ${
             isSel 
-              ? 'bg-purple-600/30 border border-purple-500/50 text-purple-200' 
-              : 'bg-black/20 hover:bg-black/40 border border-purple-500/10 text-[#a79ebb] hover:text-white'
+              ? 'bg-blue-600/30 border border-purple-500/50 text-purple-200' 
+              : 'bg-black/20 hover:bg-black/40 border border-purple-500/10 text-[#94a3b8] hover:text-white'
           }`;
           const label = p.type === 'visual' ? `Visual: ${p.commonName}` : `Anagram: ${p.commonName}`;
           btn.textContent = label;
